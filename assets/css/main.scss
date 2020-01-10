@@ -24,6 +24,17 @@ img, p {
   margin-bottom: 1rem;
 }
 
+body::-webkit-scrollbar {
+  width: 7px;
+  background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 100%;
+  background: var(--stylized);
+  border-radius: 4px;
+}
+
 .h-100vh {
   height: 100vh;
 }
