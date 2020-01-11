@@ -91,6 +91,45 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
 }
 
+.rounded-hard {
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+}
+
+.hover-card {
+  img {
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    padding: 25px;
+    background-color: rgba(0,0,0,.8);
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+
+    * {
+      color: #ffffff;
+    }
+  }
+  &:hover .overlay {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 768px) {
   .service-card {
     border-right: 1px solid var(--stylized);
