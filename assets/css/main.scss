@@ -169,7 +169,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (min-width: 992px) {
     .hover-card {
-        flex-basis: 30%;
+        flex-basis: calc(33% - 30px);
         margin: 15px;
     }
 }
