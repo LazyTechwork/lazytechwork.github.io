@@ -98,6 +98,7 @@ body::-webkit-scrollbar-thumb {
 .hover-card {
   position: relative;
   margin: 15px 0;
+  flex: 0 0 100%;
 }
 .hover-card img {
   width: 100%;
@@ -160,12 +161,9 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media (min-width: 992px) {
-  .hc-deck {
-    flex-wrap: nowrap;
-  }
-
   .hover-card {
-    margin: 0 15px;
+    flex-basis: 30%;
+    margin: 15px;
   }
 }
 .service-card:last-child {
